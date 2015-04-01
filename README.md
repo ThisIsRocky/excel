@@ -39,5 +39,5 @@ How to import:
 		}
 	2.2、执行导入解析：
 		//workbook是上传的excel Workbook对象 	
-		ExcelUtils.parseExcelToList(workbook, TestIn.class, "testIn");
+		List<TestIn> list = ExcelUtils.parseExcelToList(workbook, TestIn.class, "testIn");
 		
