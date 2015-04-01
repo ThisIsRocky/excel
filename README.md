@@ -23,16 +23,18 @@ How to import:
 			
 			@In(index="1",type=ExcelType.String)//存储配置中的1所对应列的值
 			public void setA(String a) {
+				this.a = a;
 			}
 			@In(index="2",type=ExcelType.String)
 			public void setB(String b) {
+				this.b = b;
 			}
 			@In(index="3",type=ExcelType.String)
 			public void setD(String d) {
-			}
+				this.d = d;
 			@In(index="1000",type=ExcelType.String)//1000与配置中的1000对应
 			public void setRowNum(Integer rowNum) {
-			}
+				this.rowNum = rowNum;
 		}
 	2.2、执行导入解析：
 		//workbook是上传的excel Workbook对象 	
