@@ -11,6 +11,7 @@ How to import:
 		在excel-util.properties中进行导入列的配置，示例:test.xls文件有a、b、c、d四列，需要导入a、b、d三列，则配置为“testIn=1,2,-1,3,1000”，
 		配置说明：名称“testIn”可以为任意不重复的key，“1,2,-1,3,1000”中‘1’对应a列，2对应b列，-1表示c列不导入,1000为导入的数据记录的行号。
 		
+		//excel文档导入时对应的对象类
 		public class TestIn{
 			private String a;
 			private Integer b;
